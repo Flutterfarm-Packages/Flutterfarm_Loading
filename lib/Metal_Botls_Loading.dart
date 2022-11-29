@@ -5,7 +5,9 @@ class MetalBoltsLoading extends StatefulWidget {
   final double? height;
   final double? width;
   final BoxFit? fit;
-  const MetalBoltsLoading({Key? key,   this.loaderColor,   this.height,   this.width,   this.fit}) : super(key: key);
+  const MetalBoltsLoading(
+      {Key? key, this.loaderColor, this.height, this.width, this.fit})
+      : super(key: key);
 
   @override
   _MetalBoltsLoadingState createState() => _MetalBoltsLoadingState();
@@ -15,8 +17,11 @@ class _MetalBoltsLoadingState extends State<MetalBoltsLoading> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Image.asset('assets/tools.gif',color:widget.loaderColor==null? null : widget.loaderColor,height:widget.height==null? 80:widget.height,width: widget.width==null? null:widget.width,
-          fit:widget.fit==null?  BoxFit.contain : widget.fit),
+      child: Image.asset('assets/tools.gif',
+          color: widget.loaderColor == null ? null : widget.loaderColor,
+          height: widget.height == null ? 80 : widget.height,
+          width: widget.width == null ? null : widget.width,
+          fit: widget.fit == null ? BoxFit.contain : widget.fit),
     );
   }
 }
