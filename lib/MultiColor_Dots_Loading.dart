@@ -16,7 +16,7 @@ class _MultiColorDotsLoadingState extends State<MultiColorDotsLoading> {
   Widget build(BuildContext context) {
     return Container(
       child: Image.asset('assets/multi_color_round.gif',color:widget.loaderColor==null? null : widget.loaderColor,height:widget.height==null? null:widget.height,width: widget.width==null? null:widget.width,
-          fit:widget.fit==null?  BoxFit.contain : widget.fit),
+          fit:widget.fit==null? BoxFit.contain : widget.fit),
     );
   }
 }
